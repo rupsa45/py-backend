@@ -6,7 +6,7 @@ class Contact(db.Model):
     last_name=db.Column( db.String(80),unique=False, nullable = False ) 
     email=db.Column( db.String(80),unique=False, nullable = False ) 
 
-    def to_join(self):
+    def to_json(self):
         return {
             "id": self.id,
             "firstName": self.first_name, 
