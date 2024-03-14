@@ -1,6 +1,3 @@
-#CRUD
-#create - firstname,lastname,email
-#localhost:5000
 
 from flask import request,jsonify
 from config import app,db
